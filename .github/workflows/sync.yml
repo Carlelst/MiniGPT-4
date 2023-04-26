@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '* * */1 * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+    - cron: '1 0 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 
 jobs:
   repo-sync:
@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: zwping/fork-sync@v1.6.5
         with:
-          #github_token: ${{ secrets.GITHUB_TOKEN }}
-          token: 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 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          #token: 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 
           owner: Vision-CAIR # fork 的上游仓库 user
           head: main # fork 的上游仓库 branch
           base: main # 本地仓库 branch
