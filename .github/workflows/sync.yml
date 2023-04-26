@@ -13,7 +13,8 @@ jobs:
     steps:
       - uses: zwping/fork-sync@v1.6.5
         with:
-          oauth-token: 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 
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: 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 
           owner: Vision-CAIR # fork 的上游仓库 user
           head: main # fork 的上游仓库 branch
           base: main # 本地仓库 branch
