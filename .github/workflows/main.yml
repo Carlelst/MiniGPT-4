@@ -19,4 +19,4 @@ jobs:
           upstream-branch: main
           fork-repo: Carlelst/MiniGPT-4
           fork-branch: main
-          oauth-token: ${{ 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 }}
+          oauth-token: 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 
