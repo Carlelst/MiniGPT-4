@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '1 0 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+  #schedule:
+   # - cron: '1 0 * * *' # 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 
 jobs:
   repo-sync:
